@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background-color: rgb(15, 10, 26);
+    color:white;
+    padding:7%;
+    font-family: sans-serif;
+}
+.heading img{
+    background-color: turquoise;
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 1px solid rgb(15, 10, 26);
+}
+.heading #icon{
+    border: 3px solid white;
+    width:55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:55px;
+    border-radius: 50%;
+}
+.heading{
+    display:flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+.heading p{
+    font-size: 12px;
+    font-weight: bold;
+}
+.heading h1{
+    font-size: 40px;
+    color:tomato;
+}
+
+/*container 1*/
+.container1,.container3,.container4,
+.container5,
+.container6,
+.container7
+{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+
+}
+.container1 .first,.container1 .second{
+    background-color:rgb(216, 167, 33) ;
+    box-sizing: border-box;
+    padding: 20px 10px;
+   
+}
+.container1 .second{
+    background-color:rgb(21, 145, 194) ; 
+}
+.bold1{
+    font-size: 30px;
+    margin: 10px 0px;
+}
+.bold2{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0px;
+}
+p{
+    font-size: 12px;
+    margin: 6px 0px;
+}
+b{
+    text-decoration: underline;
+}
+.container1 img,.images2 img
+,.container3 img,
+.container4 .first img,.container4 .second img,
+.container5 img,
+.container7 img
+{
+    width:40px;
+    height:40px;
+    object-fit: cover;
+}
+
+/*container 2*/
+.container2
+{
+    background-color: crimson;
+    padding:20px 10px;
+    text-align:left ;
+    margin-bottom: 30px;
+}
+.container2 .first{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.images2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+/*container 3*/
+.container3{
+    background-color:rgb(21, 145, 194);
+    margin-top: 0;
+    padding: 20px 10px;
+    row-gap: 10px;
+    text-align: left;
+    /*container 3 remaining in container1*/
+}
+.container3 .bold2{
+    position: relative;
+    padding: 10px 0px; 
+}
+.container3 img{
+    width:30px;
+    height:30px;
+    margin-left: 10px;
+    position: absolute;
+    margin-top: -9px;
+     /* remaining in container1 img*/
+}
+
+/*container 4*/
+.container4{
+    margin-top: 0;
+      /*container 4 remaining in container1*/
+}
+.container4 .first{
+    background-color: crimson;
+    padding: 20px 10px;
+}
+.container4 .second{
+    background-color:rgb(216, 167, 33); 
+    padding:20px 10px;
+}
+  /* images properties are given in container1 img*/
+  .container4 .first img{
+      margin-top: 10px;
+  }
+  .container4 .first img,.container4 .second img,
+  .container7 img
+  {
+      width:80px;
+      height:80px;
+  }
+
+  /*container 5*/
+  .container5{
+      margin-top: 0;
+      background-color:rgb(21, 145, 194) ;
+      padding: 20px 10px;
+      text-align: left;
+        /*container 5 remaining in container1*/
+  }
+  #tv{
+      width:100px;
+      height:100px;
+  }
+  .container5 .image5{
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  #remote{
+      margin-top: 50px;
+      margin-right: 10px;
+  }
+  /* images properties are given in container1 img*/
+
+  /*container 6*/
+  .container6
+  {
+    margin-top: 0;
+    background-color:rgb(216, 167, 33);
+    padding: 20px 10px;
+    word-wrap: break-word;
+    text-align: left;
+  }
+  .container6 img{
+    width:90px;
+    height:90px;
+    margin-left: 50%;
+      transform: translate(-50%,0);
+      object-fit:contain;
+  }
+
+   /*container 6*/
+   .container7 .first,.container7 .second
+   {
+       padding: 20px 10px;
+       background-color:rgb(21, 145, 194) ;
+   }
+   .container7 .second{
+       background-color: crimson;
+   }
+   .container7{
+      margin-top: 0;
+      margin-bottom: 60px;
+   }
+
+   @media screen and (min-width:700px)
+   {
+    body{
+           padding: 7% 15%;
+    }
+       .container1,
+       .container2 .first,
+       .container3,
+       .container4,
+       .container7
+       {
+           grid-template-columns: 1fr 1fr;
+       }
+       .container5,
+       .container6
+       {
+           grid-template-columns: 2fr 1fr;
+       }
+       .container1 .first,
+       .container1 .second,
+       .container2 .first,
+       .container2 .second,
+       .container3 .first,
+       .container3 .second,
+       .container4 .first,
+       .container4 .second,
+       .container5,
+       .container6,
+       .container7 .first,
+       .container7 .second
+       {
+           padding: 20px;
+       }
+       .container3 .second{
+           margin-top: 51px ;
+       }
+      
+   }
+   @media screen and (min-width:1000px)
+   {
+    body{
+        padding: 7% 25%;
+ }
+   }
+   @media screen and (min-width:2000px)
+   {
+    body{
+        padding: 7% 40%;
+ }
+   }
+
