@@ -93,7 +93,7 @@ b{
 /*container 2*/
 .container2
 {
-    background-color: crimson;
+    background-color: rgb(236, 69, 102);
     padding:20px 10px;
     text-align:left ;
     margin-bottom: 30px;
@@ -136,7 +136,7 @@ b{
       /*container 4 remaining in container1*/
 }
 .container4 .first{
-    background-color: crimson;
+    background-color:rgb(236, 69, 102);;
     padding: 20px 10px;
 }
 .container4 .second{
@@ -202,7 +202,7 @@ b{
        background-color:rgb(21, 145, 194) ;
    }
    .container7 .second{
-       background-color: crimson;
+       background-color: rgb(236, 69, 102);
    }
    .container7{
       margin-top: 0;
